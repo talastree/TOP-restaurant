@@ -1,0 +1,256 @@
+html, body {
+  height: 100px;
+  width: 100%;
+  overflow-x: hidden; 
+  overflow-y: auto;
+}
+
+#frontPage {
+  height: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+p {
+  background: black;
+  font-family: 'Yrsa', serif;
+  font-size: 40px;
+  margin: 0;
+  position: absolute;
+  display: block;
+  text-align: center;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  color: white;
+  left: 50%;
+}
+
+p1 {
+  background: black;
+  font-family: 'Yrsa', serif;
+  font-size: 30px;
+  margin: 0;
+  position: absolute;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  color: white;
+  left: 50%;
+}
+
+div.textBox {
+  position: relative;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 99%;
+  border-color: #FFB342;
+  border-style: solid;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.textBody {
+  font-family: Montserrat;
+  display: block;
+  text-align: center;
+  line-height: 100%;
+}
+
+#instaIcon{
+  height: 100px;
+  width: 100px;
+}
+
+nav {
+  margin: 0 auto;
+  height: 50px;
+  width: 310px;
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.1);
+  top: 0;
+  position: relative;
+}
+
+h1 {
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size: 30px;
+  color: black;
+  position: absolute;
+  background: #FFFAF0;
+}
+
+h2.menuTitle {
+  color: black;
+  margin: 0;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Montserrat;
+}
+
+div.borderContent {
+  position: relative;
+  width: 60%;
+  height: 60%;
+  margin: 0;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: rgb(255,222,173, .5);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+div.borderMenu{
+  position: relative;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 60%;
+  height: 60%;
+  background: rgb(255,222,173, .5);
+  min-width: 800px;
+  min-height: 500px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+div.menuBorderLine {
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70%;
+  height: 99%;
+  border-color: #FFB342;
+  border-style: solid;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+p3.itemOne {
+  color: black;
+  margin: 0;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Montserrat;
+  text-align: center;
+  display: block;
+}
+
+p3.itemTwo {
+  color: black;
+  margin: 0;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Montserrat;
+  text-align: center;
+  display: block;
+}
+
+p3.itemThree {
+  color: black;
+  margin: 0;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Montserrat;
+  text-align: center;
+  display: block;
+}
+
+p3.itemFour {
+  color: black;
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Montserrat;
+  text-align: center;
+  display: block;
+}
+
+p3.itemFive {
+  color: black;
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Montserrat;
+  text-align: center;
+  display: block;
+}
+
+#content {
+  width: 100%;
+  background-image: url("https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position:fixed;
+  top:0;
+  left: 0;
+  z-index: -1;
+}
+
+a {
+ line-height: 50px;
+ position: relative;
+ z-index: 1;
+ font-family: 'Montserrat', sans-serif;
+ cursor: pointer;
+ display:inline-block;
+ text-align: center;
+ font-style: bold;
+ color: #FFFAF0;
+}
+
+nav .animation{
+  position: absolute;
+  height: 5px;
+  z-index: 1;
+  background: #F5F5DC;
+  transition: all 0.35s ease 0s;
+}
+
+a:nth-child(1){
+  width: 100px;
+}
+nav .start-home,a:nth-child(1):hover~.animation{
+  width:100px;
+  left: 0;
+}
+
+a:nth-child(2){
+  width: 110px;
+}
+nav .start-contact,a:nth-child(2):hover~.animation{
+  width:110px;
+  left: 100px;
+}
+a:nth-child(3){
+  width: 100px;
+}
+nav .start-menu,a:nth-child(3):hover~.animation{
+  width:100px;
+  left: 210px;
+}
+a:nth-child(4){
+  width: 110px;
+}
+nav .start-location,a:nth-child(4):hover~.animation{
+  width:110px;
+  left: 310px;
+}
